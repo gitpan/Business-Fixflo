@@ -219,7 +219,7 @@ sub _api_request {
 
     $req->header( 'Accept' => 'application/json' );
 
-    if ( $method =~ /POST|PUT/ ) {
+    if ( $method =~ /POST|PUT|DELETE/ ) {
         if ( $params ) {
             $req->content_type( 'application/json' );
             $req->content( JSON->new->encode( $params ) )
@@ -256,18 +256,6 @@ sub _add_query_params {
 
     return $path;
 }
-
-=head1 AUTHOR
-
-Lee Johnson - C<leejo@cpan.org>
-
-This library is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself. If you would like to contribute documentation,
-features, bug fixes, or anything else then please raise an issue / pull request:
-
-    https://github.com/leejo/business-fixflo
-
-=cut
 
 =head1 AUTHOR
 

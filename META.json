@@ -49,7 +49,7 @@
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/leejo/business-fixflo/issues"
@@ -62,5 +62,5 @@
          "url" : "https://github.com/leejo/business-fixflo"
       }
    },
-   "version" : "0.01_02"
+   "version" : "0.01"
 }
